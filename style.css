@@ -1,0 +1,115 @@
+:root{
+    --border: #DADDDF;
+    --text: #0F1419;
+    --info: #536471;
+    --name: #0F1419;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container_tweet{
+    display: flex;
+    max-width: 100%;
+    max-width: 591px;
+    height: 161px;
+    border: 1px solid var(--border);
+    padding: 17px 84px 17px 17px;
+    
+}
+
+.image{
+    width: 48px;
+    height: 48px;
+    margin: 17px 12px 96px 17px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    margin-top: 17px;
+    height: 18px;
+}
+
+.name{
+    color: var(--name);
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 3px;
+}
+
+.pseudonym , .date{
+    font-size: 15px;
+    font-weight: 400;
+    margin-left: 6px;
+    margin-right: 3px;
+    color: var(--info);
+}
+
+.dot{
+    width: 3px;
+    height: 3px;
+    background-color: var(--info);
+    border-radius: 50px;
+}
+
+.main{
+    margin-bottom: 16px;
+}
+
+.main p {
+    max-width: 100%;
+    min-width: 430px;
+    color: var(--text);
+}
+
+.margin{
+    margin-bottom: 20px;
+}
+
+.fotter{
+    width: 430px;
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+
+}
+
+.icon_info{
+    max-width: 100%;
+    margin-right: 64px;
+}
+
+small{
+    padding: 18px;
+}
+
+.info{
+    cursor: pointer;
+}
+
+@media (max-width: 400px) {
+    .container_tweet{
+        padding: 10px;
+        margin: 0 20px;
+        width: 450px;
+        margin-left: 81px;
+}
+
+    .back{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 10px;
+    }
+}
